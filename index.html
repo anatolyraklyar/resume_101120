@@ -2,6 +2,121 @@
 <!-- saved from url=(0114)file:///C:/Users/t.000/Downloads/Scribbler%20-%20a%20codding%20landing%20page%20template%20for%20codrops_0910.html -->
 <html>
   <head>
+    <div class="main-div">
+            <a href="" class="a" target="_blank" title="Resume">Resume</a>
+          </div>
+          <div class="main-div">
+            <a href="" class="a" target="_blank" title="Letter">Letter</a>
+          </div>
+          <div class="double-buttons">
+            <a href="#">Resume</a>
+            <a href="#">Letter</a>
+            <span class="or">or</span>
+          </div>
+
+
+<style>
+      .main-div{
+    display: grid;
+    place-items: center;
+}
+.a{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-size: 1rem;
+    padding: 8px 2rem;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    position: relative;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    font-family: sans-serif;
+}
+.a::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-101%);
+    transition: all 0.3s linear;
+}
+.a:hover:before{
+    transform: translateX(0);
+    z-index: -1;
+}
+.a:hover{
+    color: black  ;
+}
+.double-buttons{
+  display: none;
+  text-align: center;
+}
+.double-buttons{
+  margin: 0 auto;
+  background-color: #fff;
+  border:1px solid #ddd;
+  position:relative;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .7rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+.double-buttons a{
+  display: inline-block;
+  padding: 0 30px;
+  line-height: 40px;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100px;
+}
+.double-buttons a:first-child{
+  border-right: 1px solid #ddd;
+}
+.double-buttons a:hover{
+  background-color: orange;
+  color: #fff;
+}
+.double-buttons a:active{
+  background-color: #444;
+  color: #fff;
+}
+.double-buttons .or{
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #fff;
+  border-radius:100%;
+  border: 1px solid #ddd;
+  font-style: italic;
+  color: #666;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  cursor: default;
+}
+@media(max-width: 576px) {
+  .main-div{
+    display: none;
+  }
+  .double-buttons{
+    display: inline-block;
+  }
+}
+    </style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154544566-1"></script>
@@ -150,24 +265,18 @@
         id="hero__terminal"
       >
         <div class="hero__wrapper">
-          <a
-            onclick="window.open('IL.docx')"
-            href="/dist/IL.docx"
-            id="button1"
-            class="custom-btn btn-5"
-            download
-          >
-            Resume
-          </a>
-          <a
-            onclick="window.open('US.docx')"
-            href="/dist/US.docx"
-            download
-            id="button2"
-            class="custom-btn btn-5"
-          >
-          Letter
-          </a>
+         <div class="main-div">
+            <a href="" class="a" target="_blank" title="Resume">Resume</a>
+          </div>
+          <div class="main-div">
+            <a href="" class="a" target="_blank" title="Letter">Letter</a>
+          </div>
+          <div class="double-buttons">
+            <a href="#">Resume</a>
+            <a href="#">Letter</a>
+            <span class="or">or</span>
+          </div>
+
         </div>
 
         <pre>  
